@@ -1,18 +1,22 @@
 # cloudwatch-cost-reduction
 Sparkathon project to reduce AWS costs
 
-===============================USAGE==================================
-logs-analyzer.ts module has the following API: analyze(logGroupName: string, logStreamName: string)
-Run test logs-analyzer.test.ts to see an example of the flow.
+    Usage:
+
+logs-analyzer.ts module has the following API: **analyze(logGroupName: string, logStreamName: string)** &nbsp;
+Run test **logs-analyzer.test.ts** to see an example of the flow.
 Ensure you're running the AWS credentials script before running the test.
 
-Tested on: 
-logGroupName: "/aws/lambda/test-lambda-hybrid-recording-screen"
-logStreamName: "2024/07/23/[$LATEST]c55e21ab8c3c4378805ba11874e2abd5"
+    Tested on: 
+
+**logGroupName: "/aws/lambda/test-lambda-hybrid-recording-screen"**
+
+**logStreamName: "2024/07/23/[$LATEST]c55e21ab8c3c4378805ba11874e2abd5"**
+
 Link: https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ftest-lambda-hybrid-recording-screen/log-events/2024$252F07$252F23$252F$255B$2524LATEST$255Dc55e21ab8c3c4378805ba11874e2abd5
 
-The result of the analyze function is the following JSON file:
-{
+    The result of the analyze function is the following JSON file:
+```{
   "duplicatedLogs": [],
   "redundantLogs": {
     "logs": [
@@ -33,7 +37,8 @@ The result of the analyze function is the following JSON file:
     "count": 3
   }
 }
-}
+}```
+
 
 Where:
 duplicatedLogs = all logs that have duplicated messages (where prefixes and suffixes of messages are equal)
