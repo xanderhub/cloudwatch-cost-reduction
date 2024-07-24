@@ -1,0 +1,17 @@
+{
+  "name": "cloudwatch-cost-reduction",
+  "version": "1.0.0",
+  "description": "Sparkathon project to reduce AWS costs",
+  "main": "index.js",
+  "scripts": {
+    "test:cucumber": "cucumber-js -p default"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3",
+    "@aws-sdk/client-cloudwatch-logs": "^3.614.0"
+  }
+}

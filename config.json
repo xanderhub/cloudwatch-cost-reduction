@@ -1,0 +1,12 @@
+{
+  "searchParams": {
+    "prefixLength": 25,
+    "suffixLength": 25,
+    "minMessageLength": 30,
+    "messageSizeThreshold": 1000,
+    "samePrefixOrSuffixThreshold": 2,
+    "duplicatedLogThreshold": 0,
+    "stackTraceIndicator": 2
+  }
+}
+
